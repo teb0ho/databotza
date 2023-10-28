@@ -11,7 +11,7 @@ access_token_secret = os.environ.get("ACCESS_TOKEN_SECRET")
 
 root_logger = logging.getLogger()
 root_logger.setLevel(logging.DEBUG)
-handler = logging.FileHandler('databotza.log', 'w', 'utf-8')
+handler = logging.FileHandler('databotza.log', 'a', 'utf-8')
 handler.setFormatter(logging.Formatter('%(asctime)s %(name)s %(message)s', '%Y-%m-%d %H:%M:%S'))
 root_logger.addHandler(handler)
 
