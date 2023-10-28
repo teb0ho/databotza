@@ -1,0 +1,18 @@
+DEBUG:requests_oauthlib.oauth1_auth:Signing request <PreparedRequest [POST]> using client <Client client_key=None, client_secret=****, resource_owner_key=1718007556772085760-NjueeZ1Chb56qL8lDKHrFq5e0prPGv, resource_owner_secret=****, signature_method=HMAC-SHA1, signature_type=AUTH_HEADER, callback_uri=None, rsa_key=None, verifier=None, realm=None, encoding=utf-8, decoding=utf-8, nonce=None, timestamp=None>
+DEBUG:requests_oauthlib.oauth1_auth:Including body in call to sign: False
+DEBUG:requests_oauthlib.oauth1_auth:Signing request <PreparedRequest [POST]> using client <Client client_key=k452Sy8sBHkJy5P9poU59Gxqk, client_secret=****, resource_owner_key=1718007556772085760-NjueeZ1Chb56qL8lDKHrFq5e0prPGv, resource_owner_secret=****, signature_method=HMAC-SHA1, signature_type=AUTH_HEADER, callback_uri=None, rsa_key=None, verifier=None, realm=None, encoding=utf-8, decoding=utf-8, nonce=None, timestamp=None>
+DEBUG:requests_oauthlib.oauth1_auth:Including body in call to sign: False
+DEBUG:oauthlib.oauth1.rfc5849:Collected params: [('oauth_nonce', '93973156732009382741698502885'), ('oauth_timestamp', '1698502885'), ('oauth_version', '1.0'), ('oauth_signature_method', 'HMAC-SHA1'), ('oauth_consumer_key', 'k452Sy8sBHkJy5P9poU59Gxqk'), ('oauth_token', '1718007556772085760-NjueeZ1Chb56qL8lDKHrFq5e0prPGv')]
+DEBUG:oauthlib.oauth1.rfc5849:Normalized params: oauth_consumer_key=k452Sy8sBHkJy5P9poU59Gxqk&oauth_nonce=93973156732009382741698502885&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1698502885&oauth_token=1718007556772085760-NjueeZ1Chb56qL8lDKHrFq5e0prPGv&oauth_version=1.0
+DEBUG:oauthlib.oauth1.rfc5849:Normalized URI: https://api.twitter.com/2/tweets
+DEBUG:oauthlib.oauth1.rfc5849:Signing: signature base string: POST&https%3A%2F%2Fapi.twitter.com%2F2%2Ftweets&oauth_consumer_key%3Dk452Sy8sBHkJy5P9poU59Gxqk%26oauth_nonce%3D93973156732009382741698502885%26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp%3D1698502885%26oauth_token%3D1718007556772085760-NjueeZ1Chb56qL8lDKHrFq5e0prPGv%26oauth_version%3D1.0
+DEBUG:oauthlib.oauth1.rfc5849:Signature: Z17U9hlPEDN15Eu7j5d39uwWpZ0=
+DEBUG:oauthlib.oauth1.rfc5849:Encoding URI, headers and body to utf-8.
+DEBUG:requests_oauthlib.oauth1_auth:Updated url: https://api.twitter.com/2/tweets
+DEBUG:requests_oauthlib.oauth1_auth:Updated headers: {b'User-Agent': b'python-requests/2.31.0', b'Accept-Encoding': b'gzip, deflate', b'Accept': b'*/*', b'Connection': b'keep-alive', b'Content-Type': b'application/json', b'Content-Length': b'79', b'Authorization': b'OAuth oauth_nonce="93973156732009382741698502885", oauth_timestamp="1698502885", oauth_version="1.0", oauth_signature_method="HMAC-SHA1", oauth_consumer_key="k452Sy8sBHkJy5P9poU59Gxqk", oauth_token="1718007556772085760-NjueeZ1Chb56qL8lDKHrFq5e0prPGv", oauth_signature="Z17U9hlPEDN15Eu7j5d39uwWpZ0%3D"'}
+DEBUG:requests_oauthlib.oauth1_auth:Updated body: b'{"text": "it\'s been 8 years or 3094 days since Kaizer Chiefs last won a title"}'
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.twitter.com:443
+DEBUG:urllib3.connectionpool:https://api.twitter.com:443 "POST /2/tweets HTTP/1.1" 403 131
+INFO:root:it's been 8 years or 3094 days since Kaizer Chiefs last won a title
+INFO:root:{"detail":"You are not allowed to create a Tweet with duplicate content.","type":"about:blank","title":"Forbidden","status":403}
+INFO:root:finished
