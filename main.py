@@ -12,7 +12,7 @@ access_token_secret = os.environ.get("ACCESS_TOKEN_SECRET")
 root_logger = logging.getLogger()
 root_logger.setLevel(logging.DEBUG)
 handler = logging.FileHandler('databotza.log', 'w', 'utf-8')
-handler.setFormatter(logging.Formatter('%(name)s %(message)s'))
+handler.setFormatter(logging.Formatter('%(asctime)s %(name)s %(message)s'))
 root_logger.addHandler(handler)
 
 
@@ -41,8 +41,6 @@ def main():
     logging.info(text)
     logging.info(request.text)
     logging.info('finished')
-
-
 
 
 if __name__ == "__main__":
