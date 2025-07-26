@@ -3,7 +3,7 @@ import requests
 import time
 
 # Replace with your actual Bearer Token (User OAuth 2.0 Access Token)
-ACCESS_TOKEN = 'AAAAAAAAAAAAAAAAAAAAAJzrqgEAAAAAp%2Bq%2BVWeXzzirIwaOt%2BXOe%2Fmv9vo%3D6VgJi02lgt7JlQUgyCuJc28hbs6ToXS7im9Dh2fblYu3zBCVSK'
+ACCESS_TOKEN = ''
 USER_ID = '1718007556772085760'  # Get this from https://api.twitter.com/2/users/me
 
 HEADERS = {
